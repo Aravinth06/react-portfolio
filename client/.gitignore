@@ -1,6 +1,9 @@
-# Ignore node_modules and build
+# Ignore node_modules and caches
 client/node_modules/
-server/node_modules/
+client/.cache/
 client/build/
+server/node_modules/
+
+# Misc
 .env
 .DS_Store
