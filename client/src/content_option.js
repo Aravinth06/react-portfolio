@@ -12,7 +12,7 @@ const introdata = {
         third: "Web apps | 24x7 support",
     },
     description: "🔧 Full Stack Developer | .NET Core • React • SQL • Reports  Helping businesses and startups build scalable, high-performance web applications using .NET Core, C#, React.js, and SQL Server. With over 5 years of development experience, I have delivered projects ranging from ERP modules and finance applications to automation testing dashboards. Whether you're looking to build a custom web app, streamline backend APIs, or automate business processes — I can deliver end-to-end solutions tailored to your goals.",
-    your_img_url: "/images/portfolio.jpg",
+    your_img_url: "/temp_folder/portfolio.jpg",
 };
 
 const dataabout = {
@@ -73,12 +73,12 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "/images/Image1.jpg",
+        img: "/temp_folder/Image1.jpg",
         description: "E-Com.",
         link: "#",
     },
     {
-        img: "/images/Image2.jpg",
+        img: "/temp_folder/Image2.jpg",
         description: "Retail.",
         link: "#",
     },
