@@ -21,7 +21,7 @@ export const ContactUs = () => {
     e.preventDefault();
     setFormdata({ ...formData, loading: true });
 
-    fetch("http://localhost:5000/api/contact", {
+    fetch("https://react-backend-91ja.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
