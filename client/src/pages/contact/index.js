@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
+import emailjs from "emailjs-com"; // ✅ Import EmailJS
 
 export const ContactUs = () => {
   const [formData, setFormdata] = useState({
@@ -21,47 +22,40 @@ export const ContactUs = () => {
     e.preventDefault();
     setFormdata({ ...formData, loading: true });
 
-    fetch("https://react-backend-91ja.onrender.com/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        message: formData.message,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
+    emailjs
+      .send(
+        "service_pl232e8",        // ✅ Your Service ID
+        "template_j6j05j7",       // ✅ Your Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        },
+        "wY5p9d8d6Xzi8Mr5e"       // ✅ Your Public Key
+      )
+      .then(() => {
         setFormdata({
           name: "",
           email: "",
           phone: "",
           message: "",
           loading: false,
-          alertmessage: "SUCCESS! Thank you for your message.",
+          alertmessage: "SUCCESS! Your message has been sent via email.",
           variant: "success",
           show: true,
         });
 
-        // Auto-hide the message after 4 seconds
         setTimeout(() => {
           setFormdata((prev) => ({ ...prev, show: false }));
         }, 4000);
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error sending email:", error);
         setFormdata({
           ...formData,
           loading: false,
-          alertmessage: `Failed to send! ${error.message}`,
+          alertmessage: `Failed to send! ${error.text || error.message}`,
           variant: "danger",
           show: true,
         });

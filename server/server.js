@@ -1,15 +1,20 @@
-// server/server.js
 const express = require("express");
 const cors = require("cors");
+const contactRoutes = require("./routes/contact");
+
 const app = express();
-const contactRoute = require("./routes/contact");
+const PORT = process.env.PORT || 10000;
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/contact", contactRoute);
+// ✅ Mount routes at /api/contact
+app.use("/api/contact", contactRoutes);
 
-const PORT = 5000;
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
 app.listen(PORT, () => {
-  console.log(`API Server running on http://localhost:${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
