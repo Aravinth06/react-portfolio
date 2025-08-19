@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { logotext ,socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
@@ -22,6 +23,16 @@ const Headermain = () => {
           </Link>
           <div className="d-flex align-items-center">
           <Themetoggle />
+           {/* ✅ WhatsApp icon button */}
+            <a
+              href="https://wa.me/919626944634"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-3"
+              title="Chat on WhatsApp"
+            >
+              <FaWhatsapp size={22} color="green" />
+            </a>
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>

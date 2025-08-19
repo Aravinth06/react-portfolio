@@ -99,7 +99,7 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com",
     facebook: "https://facebook.com",
-    linkedin: "https://www.linkedin.com/in/aravinth-g-a41150169",
+    linkedin: "https://www.linkedin.com",
     twitter: "https://twitter.com",
 };
 export {
