@@ -83,7 +83,7 @@ const dataportfolio = [{
         link: "/portfolio/retail",
     },
     {
-        img: "/images/Image3.jpg",
+        img: "/images/image3.jpg",
         description: "Porfolio Web Designs/Developments.",
         link: "/portfolio/webdesign",
     },
