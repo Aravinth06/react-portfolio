@@ -5,11 +5,13 @@ import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
-import { Adminlogin} from "../pages/admin"
-import { AdminDashboard } from "../pages/admin/Dashboard";
 import { PrivateRoute } from "../PrivateRoute";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { EcomProject } from "../pages/Projects";
+import { RetailProject } from "../pages/Projects";
+import { PortfolioProject } from "../pages/Projects";
+
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -26,16 +28,10 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/ecom" element={<EcomProject />} />
+        <Route path="/portfolio/retail" element={<RetailProject />} />
+        <Route path="/portfolio/webdesign" element={<PortfolioProject />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/admin" element={<Adminlogin/>} />
-        <Route
-        path="/admin/dashboard"
-        element={
-          <PrivateRoute>
-            <AdminDashboard />
-          </PrivateRoute>
-        }
-      />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

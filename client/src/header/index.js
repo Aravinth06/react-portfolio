@@ -28,12 +28,12 @@ const Headermain = () => {
               href="https://wa.me/919626944634"
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-3"
+              className="navbar-brand nav_ac"
               title="Chat on WhatsApp"
             >
               <FaWhatsapp size={22} color="green" />
             </a>
-          <button className="menu__button  nav_ac" onClick={handleToggle}>
+          <button className="navbar-brand nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
           

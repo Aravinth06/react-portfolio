@@ -23,7 +23,7 @@ export const AdminDashboard = () => {
   const { setIsAdminLoggedIn } = useAuth();
 
   useEffect(() => {
-    fetch("https://react-backend-91ja.onrender.com/api/contact/messages")
+    fetch("http://localhost:5000/api/contact/messages")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch messages");
         return res.json();

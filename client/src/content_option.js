@@ -75,13 +75,193 @@ const services = [{
 const dataportfolio = [{
         img: "/images/Image1.jpg",
         description: "E-Com.",
-        link: "#",
+        link: "/portfolio/ecom",
     },
     {
         img: "/images/Image2.jpg",
         description: "Retail.",
-        link: "#",
+        link: "/portfolio/retail",
     },
+    {
+        img: "/images/Image3.jpg",
+        description: "Porfolio Web Designs/Developments.",
+        link: "/portfolio/webdesign",
+    },
+    
+    
+];
+
+const ssEcomportfolio = [{
+        img: "/images/EcomSS/Ecomss1.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+        img: "/images/EcomSS/Ecomss2.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss3.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss4.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss5.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss6.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss7.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss8.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss9.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss10.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss11.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss12.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss13.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss14.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss15.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss16.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss17.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss18.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+         img: "/images/EcomSS/Ecomss19.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    
+];
+
+const ssRetailportfolio = [{
+        img: "/images/RetailSS/Retail1.png",
+        description: "E-Com.",
+        link: "/portfolio/ecom",
+    },
+    {
+        img: "/images/RetailSS/Retail2.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail3.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail4.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail5.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail6.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail7.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/RetailSS/Retail8.png",
+        description: "Retail.",
+        link: "/portfolio/retail",
+    },    
+    
+];
+
+const ssportfolio = [{
+        img: "/images/PortfolioSS/Portf1.jpg",
+        description: "For Software Prefessionals",
+        link: "/portfolio/ecom",
+    },
+    {
+        img: "/images/PortfolioSS/Portf2.jpg",
+        description: "For Legal Advisors.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/PortfolioSS/Portf3.jpg",
+        description: "For Constructions.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/PortfolioSS/Portf4.jpg",
+        description: "For Photography.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/PortfolioSS/Portf5.jpg",
+        description: "For Fitness.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/PortfolioSS/Portf6.jpg",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
     
 ];
 
@@ -113,4 +293,7 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    ssEcomportfolio,
+    ssRetailportfolio,
+    ssportfolio,
 };
