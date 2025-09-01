@@ -46,10 +46,17 @@ export const Portfolio = () => {
           {dataportfolio.map((data, i) => (
             <div key={i} className="gallery-item" onClick={() => handleOpen(i)}>
               <img src={data.img} alt="" className="gallery-img" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
+              <div className="content">
+                <p>{data.description}</p>
+                <a
+                  href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()} // prevent triggering parent click
+                >
+                  View Project
+                </a>
+              </div>
             </div>
           ))}
         </div>
