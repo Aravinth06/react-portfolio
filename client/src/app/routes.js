@@ -11,6 +11,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { EcomProject } from "../pages/Projects";
 import { RetailProject } from "../pages/Projects";
 import { PortfolioProject } from "../pages/Projects";
+import { ABProject } from "../pages/Projects"; //appointment booking
 
 
 const AnimatedRoutes = withRouter(({ location }) => (
@@ -31,6 +32,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/portfolio/ecom" element={<EcomProject />} />
         <Route path="/portfolio/retail" element={<RetailProject />} />
         <Route path="/portfolio/webdesign" element={<PortfolioProject />} />
+        <Route path="/portfolio/appointmentbooking" element={<ABProject />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Home />} />
       </Routes>

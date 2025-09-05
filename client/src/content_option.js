@@ -87,6 +87,11 @@ const dataportfolio = [{
         description: "Porfolio Web Designs/Developments.",
         link: "/portfolio/webdesign",
     },
+    {
+        img: "/images/image4.jpg",
+        description: "Appointment Booking.",
+        link: "/portfolio/appointmentbooking",
+    },
     
     
 ];
@@ -265,6 +270,59 @@ const ssportfolio = [{
     
 ];
 
+const ssappointment = [{
+        img: "/images/HospitalSS/ab1.png",
+        description: "For Software Prefessionals",
+        link: "/portfolio/ecom",
+    },
+    {
+        img: "/images/HospitalSS/ab2.png",
+        description: "For Legal Advisors.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/HospitalSS/ab3.png",
+        description: "For Constructions.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/HospitalSS/ab4.png",
+        description: "For Photography.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/HospitalSS/ab5.png",
+        description: "For Fitness.",
+        link: "/portfolio/retail",
+    },
+    {
+        img: "/images/HospitalSS/ab6.png",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
+    {
+        img: "/images/HospitalSS/ab7.png",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
+    {
+        img: "/images/HospitalSS/ab8.png",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
+    {
+        img: "/images/HospitalSS/ab9.png",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
+    {
+        img: "/images/HospitalSS/ab10.png",
+        description: "For Doctors.",
+        link: "/portfolio/retail",
+    }, 
+    
+];
+
 const contactConfig = {
     YOUR_EMAIL: "aravinth06mvr@gmail.com",
     YOUR_FONE: "+91 96269 44634",
@@ -296,4 +354,5 @@ export {
     ssEcomportfolio,
     ssRetailportfolio,
     ssportfolio,
+    ssappointment,
 };
